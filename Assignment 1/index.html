@@ -5,27 +5,32 @@
     <meta charset="UTF-8">
     <title>Advanced CSS - Assignment 1</title>
     <style>
-        .google-link {
+        a:first-of-type {
             color: green;
         }
 
-        .link-group {
+        a:nth-of-type(2) {
+            color: green;
+        }
+
+        a:last-of-type {
             color: red;
         }
 
         #second-div p:nth-child(odd) {
             color: blue;
         }
+
         #second-div p:nth-child(even) {
             color: red;
         }
 
         #first-div>p::after {
-            content:" - NEW";
+            content: " - NEW";
             color: yellow;
         }
 
-        #paragraph10:hover {
+        p:nth-child(8):hover {
             font-style: italic;
         }
     </style>
@@ -34,9 +39,9 @@
 <body>
     <h1>Main Heading</h1>
     <p>Paragraph 1</p>
-    <a href="https://www.google.com/" class="google-link">Google</a>
-    <a href="https://www.google.com/doodles" class="google-link">Google Doodles</a>
-    <a href="https://www.link-group.eu/" target="_blank" class="link-group"">Go to Link Group</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Go to Link Group</a>
     <div id="first-div">
         <h2>Subheading</h2>
         <p>Paragraph 2</p>
@@ -51,7 +56,7 @@
         </div>
     </div>
     <p>Paragraph 9</p>
-    <p id="paragraph10">Paragraph 10</p>
+    <p>Paragraph 10</p>
 </body>
 
 </html>
